@@ -26,3 +26,49 @@ A:hover {font-size:20pt; font-weight:bold; color: rgb(255, 0, 225);}
 
 .link-cell,
 .description-cell {border: 1px solid #060606}
+
+/*This is the sytle of the insert name button*/
+#NameButton {
+background-color: #AD77C3;
+    border: 2px solid #0e0d0d;}
+
+/* Size adjustment for the orignal photo*/
+#myImage {
+    max-width: 5%;
+    max-height: 5%;}
+
+/* the style choice was made to make the navigation items lined up horizontalyy*/
+#mainMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; }
+
+#mainMenu li {
+    margin-right: 20px; }
+
+#mainMenu a {
+    text-decoration: none;
+    display: inline-block; }
+
+/* Here is the design of the submenu which is aligned with the rest of the website in colour and style */
+#subMenu {
+    display: none;
+    position: absolute;
+    top: 23%;
+    right: 72.5%;
+    background-color: #AD77C3;
+    border: 1px solid #0e0d0d;
+    padding: 0;}
+
+#subMenu li {
+    list-style: none;}
+
+#subMenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #b6e0e7;}
+
+#subMenu a:hover {
+    background-color: #131313;}
