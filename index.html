@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <button id ="NameButton">Enter Your Name Here</button>
+    <div id= "Output"></div>
+    <hr>
+    <img id="myImage" src="C:\Users\orenm\OneDrive\Documents\GitHub\orenmikh.Lab2.780.github.io\images\Personal Image for Website.jpg" alt="Myself" onclick="enlargeImage()">
+    <h2>Personal Infromation</h2>
+
+    <nav id="mainMenu">
+        <ul>
+            <li><a href="C:\Users\orenm\OneDrive\Documents\GitHub\orenmikh.Lab2.780.github.io\images\Resume .jpg" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">Resume</a></li>
+            <li><a href="https://orenmikhailov.wixsite.com/trident-strength" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">Work Sample</a></li>
+            <li><span onmouseover="showSubMenu()" onmouseout="hideSubMenu()">Contact Information ▼</span>
+                <ul id="subMenu">
+                    <li><a href="oren.mikhailov@toronomu.ca">Email</a></li>
+                    <li><a href="647-393-3538">Phone Number</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     <h1>Content Website </h1>
     <p>Hello and welcome my name is Oren Mikhailov. In this website I will be demonstrating varies forms of HTML website design, as well as offering insight into my life. </p>
     <hr>
