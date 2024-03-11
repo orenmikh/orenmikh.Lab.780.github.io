@@ -61,9 +61,74 @@
         </div>
     </d1>
 
+<br>
+    <!----feedback form-->
+    <div class="container">
+        <h2>Feedback Form</h2>
 
+        <form id="feedbackForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
 
+        </div>
 
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+
+        <div class="form-group">
+            <label>Age:</label>
+            <input type="radio" id="19-25" name="age" value="19-25" required>
+            <label for="age">19-25</label>
+            <input type="radio" id="26-35" name="age" value="26-35" required>
+            <label for="age">26-35</label>
+            <input type="radio" id="36-45" name="age" value="36-45" required>
+            <label for="age">36-45</label>
+            <input type="radio" id="46-55" name="age" value="46-55" required>
+            <label for="age">46-55</label>
+            <input type="radio" id="56+" name="age" value="56+" required>
+            <label for="age">56+</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Industry:</label>
+            <input type="checkbox" id="healthcare" name="industry" value="healthcare">
+            <label for="healthcare">Healthcare</label>
+            <input type="checkbox" id="information technology" name="industry" value="information technology">
+            <label for="information technology">Information Technology</label>
+            <input type="checkbox" id="educational" name="industry" value="educational">
+            <label for="educational">Educational</label>
+            <input type="checkbox" id="media" name="industry" value="media">
+            <label for="media">Media</label>
+            <input type="checkbox" id="construction" name="industry" value="construction">
+            <label for="construction">Construction</label>
+            <input type="checkbox" id="hospitality" name="industry" value="hospitality">
+            <label for="hospitality">Hospitality</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+
+        </div>
+
+        <button type="submit">Submit</button>
+        <input type="reset" value="Clear">
+        </form>
+    </div>
 
 
     
@@ -71,5 +136,3 @@
 </html>
 
 
-<!--<br> is line break ---> 
-<!---<hr> is horiztonal line-->
