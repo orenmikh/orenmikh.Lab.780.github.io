@@ -58,3 +58,25 @@ function hideSubMenu() {
     var subMenu = document.getElementById("subMenu");
     subMenu.style.display = "none";}
 
+
+// Feedback Form
+
+// This function will capture the form submission and data
+function handleSubmit(event) {
+    // Here the function will retreiev the data from the form
+    var formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        age: document.querySelector('input[name="age"]:checked').value,
+        industry: [],
+        message: document.getElementById("message").value,
+        myfile: document.getElementById("myfile").value
+    };
+    // As the industry section is checkboxes here the mutiple selection data will be retrevied from
+    var industryCheckboxes = document.querySelectorAll('input[name="industry"]:checked');
+    industryCheckboxes.forEach(function(checkbox) {
+        formData.industry.push(checkbox.value);
+    });
+    // This stores the data infromation and turns it into a string to be stored in a local storage
+    localStorage.setItem("formData", JSON.stringify(formData));}
