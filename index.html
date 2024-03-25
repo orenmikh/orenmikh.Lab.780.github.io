@@ -11,7 +11,8 @@
     <button id ="NameButton">Enter Your Name Here</button>
     <div id= "Output"></div>
     <hr>
-    <img id="myImage" src="images/Personal Image for Website.jpg" alt="Myself" onclick="enlargeImage()">
+     <!---Below I added the alt attribute to my img element to provide a description of the image to those affect by visual impairment that rely on screen readers-->
+    <img id="myImage" src="images/Personal Image for Website.jpg" alt="A professional image of myself" onclick="enlargeImage()">
     <h2>Personal Infromation</h2>
 
     <nav id="mainMenu">
@@ -61,7 +62,7 @@
         </div>
     </d1>
 
-<br>
+    <br>
     <!----feedback form-->
     <div class="container">
         <h2>Feedback Form</h2>
@@ -129,7 +130,19 @@
         <input type="reset" value="Clear">
         </form>
     </div>
-
+    <br>
+    <!----Accessibility functions-->
+    <h2>Accessibility</h2>
+    <!--In here i created the 2 buttons that would function as the increase and decrease font size which would aid those with visual impairments-->
+    <button onclick="changeFontSize('increase')">Increase Font Size</button>
+    <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+    <br>
+    <br>
+    <!--Here is where i created the dropdown menu that would change the color scheme for people with color blindness, or color vision deficiency-->
+    <select id="colorPalette" onchange="changeColorScheme()">
+        <option value="default">Default</option>
+        <option value="highContrast">High Contrast</option>
+    </select>
 
     
 </body>
