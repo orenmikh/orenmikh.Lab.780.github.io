@@ -108,6 +108,27 @@ background-color: #AD77C3;
     button:hover {
         background-color: #0056b3;}
 
+/* Define the new high contrast color schemes */
+body.highContrast {
+    background-color: #000000; 
+    color: #FFFFFF; 
+    a {
+        color: #FF0000; 
+    }
+    button {
+        background-color: #00FF00; 
+        color: #FFFFFF; 
+    }
+    body {
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        line-height: 1.5; 
+    }
+    label {
+        font-weight: Bold; 
+        color: #faf9f9; 
+        font-family: Arial, Helvetica, sans-serif;}
+}
 
 
 
