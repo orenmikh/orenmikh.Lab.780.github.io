@@ -80,3 +80,37 @@ function handleSubmit(event) {
     });
     // This stores the data infromation and turns it into a string to be stored in a local storage
     localStorage.setItem("formData", JSON.stringify(formData));}
+
+// This is the function to change the size of the font
+function changeFontSize(action) {
+    //this retreives the body elements
+    var body = document.body;
+    // this retrieves the current font size of the body 
+    var currentSize = parseInt(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+    // the condiation statment changes the size based on the action
+    if (action === 'increase') {
+        body.style.fontSize = (currentSize + 2) + 'px';
+    } else if (action === 'decrease') {
+        body.style.fontSize = (currentSize - 2) + 'px';
+    }
+}
+
+// this fucntions calls on the change of color scheme which selects a different color scheme from a dropdown menu 
+function changeColorScheme() {
+    // this retrieves the colorPalette in the HTML code
+    var selectElement = document.getElementById('colorPalette');
+    // this retrieves the selected value of the menu item in the drop down
+    var selectedValue = selectElement.value;
+    // this retrieves the body elemet 
+    var body = document.body;
+    // this clears an exisiting body elements 
+    body.className = ''; 
+    // this conditonal statment selects the value of the color scheme if it doesnt equal default from the CSS code
+    if (selectedValue !== 'default') {
+        body.classList.add(selectedValue);
+    }
+}
+
+
+
+
